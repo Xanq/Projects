@@ -1,0 +1,47 @@
+// ### Primary
+
+// $VeryDarkMagenta: hsl(300, 43%, 22%); //700
+// $SoftPink: hsl(333, 80%, 67%);  //300
+
+// // ### Neutral
+
+// $DarkGrayishMagenta: hsl(303, 10%, 53%); //100
+// $LightGrayishMagenta: hsl(300, 24%, 96%);  //200
+// $White: hsl(0, 0%, 100%); //300
+
+
+// $font-primary: 'Spartan', sans-serif;
+
+// // 15 px ale mobile ma 13px
+// $font-size400: 0.8125rem;
+// $font-size500: 0.9375rem;
+// $font-size900: 2rem;
+
+
+// @media(min-width: 50em){
+
+//     $font-size900: 3rem;
+// }
+
+
+:root{
+
+    //Primary
+        --clr-primary-700: hsl(300, 43%, 22%);
+        --clr-primary-300: hsl(333, 80%, 67%)
+    //Neutral
+        --clr-neutral-100: hsl(303, 10%, 53%);
+        --clr-neutral-200:hsl(300, 24%, 96%);
+        --clr-neutral-300: hsl(0, 0%, 100%);
+
+        --ff-primary: 'spartan', sans-serif;
+
+        --fs-400: .8125rem;
+        --fs-500: .9625rem;
+        --fs-900: 2rem;
+
+        @media(min-width: 50em){
+            --fs-900: 3rem;
+        }
+}
+
