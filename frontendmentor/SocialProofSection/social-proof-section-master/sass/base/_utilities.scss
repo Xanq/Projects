@@ -1,0 +1,24 @@
+/*
+- w wiekszych projektach byloby to w  folderze.
+*/
+
+.container{
+    max-width: 70rem;
+    padding: 0 2rem ;
+    margin: 0 auto;
+}
+//element>element 	div > p
+//div + p 	Selects the first <p> element 
+//that are placed immediately after <div> elements
+
+//it's selecting all elements that 
+//are adjacent sibiliings to another
+//element that are inside flow content or that are
+//direct chilrden of flow content
+.flow-content > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.split{
+    display: flex;
+}

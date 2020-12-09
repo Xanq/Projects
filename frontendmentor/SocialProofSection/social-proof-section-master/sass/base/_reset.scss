@@ -20,10 +20,16 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[class],
+ol[class] {
   list-style: none;
 }
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
 
 /* Set core root defaults */
 html {

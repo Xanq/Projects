@@ -34,11 +34,14 @@
         --clr-neutral-200:hsl(300, 24%, 96%);
         --clr-neutral-300: hsl(0, 0%, 100%);
 
-        --ff-primary: 'spartan', sans-serif;
+        --ff-primary: 'Spartan', sans-serif;
 
         --fs-400: .8125rem;
         --fs-500: .9625rem;
         --fs-900: 2rem;
+
+        // bar?
+        --br: 1rem;
 
         @media(min-width: 50em){
             --fs-900: 3rem;
