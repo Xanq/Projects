@@ -20,5 +20,19 @@
 }
 
 .split{
+    //do 800px i mniej.
     display: flex;
+    //kierunek gap zmienia przy direction !
+    gap: 1rem;
+    flex-direction: column;
+@media(min-width: 50em){
+    display: flex;
+flex-direction: row;
+
+}
+
+}
+
+.a-center{
+    align-items: center;
 }
