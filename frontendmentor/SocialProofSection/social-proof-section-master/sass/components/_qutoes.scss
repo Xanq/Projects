@@ -2,6 +2,17 @@
     --spacer: 2rem;
 
   
+    // blockquote zmienil na li 
+    // WSZystko nagle zmienilo sie na ta 
+    // sama wysokosc
+    // the reason that worked is beacuse
+    // I'm using display flex on this by default
+    // display flex everything streches to the same
+    // height
+    // So  all this li were the same height here
+    // so they were all stretching  but inside each li we had 
+    // our blockqoute was shrinking them 
+    // if it didn't need to grow it wasn't growing
     blockquote{
         background: var(--clr-primary-700);
         color: var(--clr-neutral-200);
@@ -11,7 +22,15 @@
 
         max-width: 25rem;
         margin: 0 auto;
+        // 100% height of parents
+        // otherwhise I would had to use li instead of 
+        //blockquote
+        height: 100%;
     }
+
+    // li{
+    //     outline: 5px solid green;
+    // }
 
     img{
         width: 3rem;
