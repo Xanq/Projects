@@ -2,6 +2,16 @@
     --spacer: 2rem;
 
   
+li{
+    &:nth-child(2){
+        transform:translateY(3rem);
+    }
+
+    &:nth-child(3){
+        transform:translateY(6rem);
+    }
+}
+
     // blockquote zmienil na li 
     // WSZystko nagle zmienilo sie na ta 
     // sama wysokosc
@@ -26,6 +36,8 @@
         // otherwhise I would had to use li instead of 
         //blockquote
         height: 100%;
+
+        
     }
 
     // li{
@@ -48,5 +60,7 @@
 
     .qutoe{
             margin-top: var(--spacer);
+
+           
     }
 }

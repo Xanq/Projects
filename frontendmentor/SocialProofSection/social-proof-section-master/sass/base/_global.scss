@@ -2,7 +2,9 @@ body{
     font-family: var(--ff-primary);
     font-size: var(--fs-400);
     padding-top: 5rem;
-    text-align: center;
+
+    background-image: url("/images/bg-pattern-top-desktop.svg");
+    
 }
 
 h1{
@@ -33,13 +35,13 @@ h1{
 
 main{
     display: grid;
-    gap: 3rem;
+    gap: 3rem 1rem;
 }
 
 @media (min-width:50em){
     main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     }
 
@@ -48,6 +50,7 @@ main{
     }
     .reviews{
         grid-column: 2 / 3;
+        align-self: center;
     }
     .quotes{
         //-1 works only for explicit columns that 

@@ -7,7 +7,7 @@
         background: var(--clr-neutral-200);
         color: var(--clr-primary-700);
         font-weight: 800;
-        padding: 0.5rem;
+        padding: .75rem 2rem;
         border-radius: var(--br);
 
         max-width: 25rem;
@@ -19,7 +19,7 @@
             content: '';
             // jak dam tutaj %
             //pojawia sie wiecej stars
-            width: 105px;
+            width: 100px;
 
             //taki sam jak w svg
             height: 1rem;
@@ -32,6 +32,31 @@
             background-repeat: round;
 
         }
+
+
+        @media (min-width:50em){
+            display: flex;
+            align-content: center;
+    
+
+            &::before{
+                margin: 0 1.5rem 0 0;
+            }
+
+
+            &:first-of-type{
+                margin-left: 0;
+                transform: translateX(3rem);
+            }
+            &:last-of-type{
+                margin-right: 0;
+                transform: translateX(-3rem);
+
+            }
+
+        }
+
+
 
     }
 }
