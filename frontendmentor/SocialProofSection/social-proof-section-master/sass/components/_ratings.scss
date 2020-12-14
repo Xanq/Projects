@@ -3,6 +3,17 @@
     // tez w utilities
     //update
     // --flow-space:3rem;
+
+    line-height: 1;
+
+    // & > * > *{
+    //     outline: green 1px solid;
+    // }
+
+    // p{
+  
+    // }
+
     li{
         background: var(--clr-neutral-200);
         color: var(--clr-primary-700);
@@ -10,34 +21,40 @@
         padding: .75rem 2rem;
         border-radius: var(--br);
 
-        max-width: 25rem;
+        max-width: 26rem;
         // margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
 
-        &::before{
-            content: '';
-            // jak dam tutaj %
-            //pojawia sie wiecej stars
-            width: 100px;
+        text-align: center;
+        
 
-            //taki sam jak w svg
-            height: 1rem;
 
-            margin: 0 auto;
-            display: block;
-            background-image: url("/images/icon-star.svg");
-            margin-bottom: .5rem;
-            // jak brakuje miejsca to ucina
-            background-repeat: round;
+        
+        // &::before{
+        //     content: '';
+        //     // jak dam tutaj %
+        //     //pojawia sie wiecej stars
+        //     width: 100px;
 
-        }
+        //     //taki sam jak w svg
+        //     height: 1rem;
+
+        //     margin: 0 auto;
+        //     display: block;
+        //     background-image: url("/images/icon-star.svg");
+        //     margin-bottom: .5rem;
+        //     // jak brakuje miejsca to ucina
+        //     background-repeat: round;
+
+        // }
 
 
         @media (min-width:50em){
             display: flex;
-            align-content: center;
-    
+            align-items: center;
+            
+        
 
             &::before{
                 margin: 0 1.5rem 0 0;
@@ -45,12 +62,12 @@
 
 
             &:first-of-type{
-                margin-left: 0;
-                transform: translateX(3rem);
+            
+                transform: translateX(-3rem);
             }
             &:last-of-type{
-                margin-right: 0;
-                transform: translateX(-3rem);
+               
+                transform: translateX(3rem);
 
             }
 
@@ -59,4 +76,33 @@
 
 
     }
+
+  
+    
+
+    img{
+        display: inline-block;
+        margin:0 .5rem .5rem;  
+    }
+
+    @media (min-width: 50em){
+
+           
+        img{
+            margin: -.25rem .5rem 0 0;
+        }
+}
+
+}
+
+
+
+
+.stars{
+    display: flex;
+    justify-content: center;
+    
+
+
+
 }
