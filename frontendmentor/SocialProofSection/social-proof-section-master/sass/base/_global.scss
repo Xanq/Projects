@@ -9,6 +9,10 @@ body {
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-size:  #{"max(50%, 400px)"};
+
+    @media (min-width:50em) {
+        padding-top: 7.5rem
+    }
 }
 
 
