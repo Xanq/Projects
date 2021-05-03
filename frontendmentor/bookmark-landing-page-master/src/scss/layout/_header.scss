@@ -1,0 +1,51 @@
+@use "../utilities/index";
+
+//305px
+.header {
+  margin-top: 4.25rem;
+  &__logo {
+    //img it's inlince elem.
+    display: block;
+    margin: 0 auto;
+
+    height: 11.3125rem;
+    width: 16.9375rem;
+  }
+
+  &__shape {
+    position: absolute;
+    width: 15.625rem;
+    height: 11.0625rem;
+    background-color: blue;
+
+    border-radius: 100px 0 0 100px;
+    z-index: -10;
+    top: 10.5rem;
+    right: 17.5rem;
+  }
+}
+
+//325px
+// .header {
+//   margin-top: 4.25rem;
+//   &__logo {
+//     //img it's inlince elem.
+//     display: block;
+//     margin: 0 auto;
+
+//     height: 11.3125rem;
+//     width: 16.9375rem;
+//   }
+
+//   &__shape {
+//     position: absolute;
+//     width: 15.625rem;
+//     height: 11.0625rem;
+//     background-color: blue;
+
+//     border-radius: 100px 0 0 100px;
+//     z-index: -10;
+//     top: 10.5rem;
+//     right: 17.5rem;
+//   }
+// }

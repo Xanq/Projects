@@ -1,0 +1,41 @@
+.container {
+  //mobile first
+
+  //   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  // grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "nav"
+    "header"
+    "feature"
+    "bookmark"
+    "extension"
+    "frequently";
+
+  gap: 1rem;
+}
+
+.nav {
+  grid-area: nav;
+}
+.header {
+  grid-area: header;
+}
+
+.feature {
+  grid-area: feature;
+}
+
+.bookmark {
+  grid-area: bookmark;
+}
+
+.extension {
+  grid-area: extension;
+}
+
+.frequently {
+  grid-area: frequently;
+}

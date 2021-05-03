@@ -1,0 +1,15 @@
+@use "../utilities/index";
+
+body {
+  //mobile first 305 px width
+  max-width: 19.0625rem;
+  margin: 0 auto;
+  border: red 1px solid;
+}
+
+// body {
+//   //mobile first 325 px width
+//   max-width: 20.3125rem;
+//   margin: 0 auto;
+//   border: red 1px solid;
+// }

@@ -1,0 +1,41 @@
+@use '../utilities';
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.625rem;
+  margin-top: 2.125rem;
+
+  .nav__logo {
+    //img + title together
+    width: 7.625rem;
+    height: 1.25rem;
+  }
+
+  .nav__menu {
+    width: 0.9375rem;
+    height: 0.8125rem;
+  }
+}
+
+// bigger than 325 pix
+
+// #nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 0 1.6875rem;
+//   margin-top: 2.125rem;
+
+//   .nav__logo {
+//     //img + title together
+//     width: 8.125rem;
+//     height: 1.43rem;
+//   }
+
+//   .nav__menu {
+//     width: 1.0625rem;
+//     height: 0.8125rem;
+//   }
+// }

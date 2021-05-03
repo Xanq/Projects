@@ -1,0 +1,21 @@
+$font-family: "Courier New", Courier, monospace;
+$font-size: 1.125rem;
+// $font-weight: 400;
+$fontPrimary: "Rubik", sans-serif;
+
+.text {
+  font-family: $fontPrimary;
+
+  &--light {
+    font-weight: 400;
+  }
+
+  &--med {
+    font-weight: 500;
+  }
+}
+//1rem - 16px
+
+body {
+  font-family: $fontPrimary;
+}
