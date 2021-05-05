@@ -1,6 +1,12 @@
+// rem uses the root element (html) using its font-size as the base (16px by default) to calculate its size, so basically your rem value from img multiplied by the font-size on html
+
+// It is calculated based on the font-size of the parent element. For example, the h1 font-size is 18 pixels. To convert it into em, 18 ÷ 16 = 1.125em (16 pixel is the default body font-size).
+
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  // font-size: 100%;
+  //18rem
+  font-size: 112.5%;
 }
 
 *,

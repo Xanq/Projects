@@ -1,27 +1,79 @@
-@use "../utilities/index";
+@use "../utilities" as *;
 
 //305px
 .header {
-  margin-top: 4.25rem;
-  &__logo {
-    //img it's inlince elem.
-    display: block;
-    margin: 0 auto;
+  margin-top: 3.61rem;
+  position: relative;
+  &__pictures {
+    &--logo {
+      //img it's inlince elem.
+      display: block;
+      margin: 0 auto;
 
-    height: 11.3125rem;
-    width: 16.9375rem;
+      // //252px
+      // width: 15.9375rem;
+      // // //168px
+      // height: 10.625rem;
+      // max-width: 100%;
+      // max-height: 100%;
+      //jak ustalam width w rem to zabiera mi po 35 px z height i width;
+      //% bardziej pasuja
+      width: 95%;
+      height: 95%;
+      //95% pasuje idealnie do rozmiarow z figmy JAK TO TAK jest?
+      object-fit: cover;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      //235
+      width: 13.05rem;
+      //165
+      height: 9.16rem;
+      background-color: blue;
+      position: absolute;
+      opacity: 0.5;
+      z-index: -199;
+      top: 2.6rem;
+      right: 0rem;
+      border-radius: 200px 0 0 200px;
+    }
   }
 
   &__shape {
     position: absolute;
+    // to chyyba musza byc %
     width: 15.625rem;
     height: 11.0625rem;
     background-color: blue;
 
-    border-radius: 100px 0 0 100px;
+    border-radius: 200px 0 0 200px;
+    // zrobic jakos do relativ
     z-index: -10;
-    top: 10.5rem;
-    right: 17.5rem;
+    margin-bottom: -10rem;
+    opacity: 0.5;
+  }
+
+  &__content {
+    margin-top: 4.72rem;
+    display: grid;
+    gap: 1rem;
+    &--title {
+      display: block;
+      text-align: center;
+      color: $VeryDarkBlue;
+    }
+
+    &--text {
+      text-align: center;
+      color: $GrayshBlue;
+      line-height: 1.4;
+      padding: 0 20px;
+    }
+
+    // &__button{}
+    // &__button{}
   }
 }
 
