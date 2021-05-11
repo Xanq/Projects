@@ -74,6 +74,13 @@
 
     // &__button{}
     // &__button{}
+
+    &--buttons {
+      display: grid;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
 }
 
