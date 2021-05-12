@@ -4,7 +4,7 @@
   //123x39
   height: 2.16rem;
   width: 6.83rem;
-  border-radius: 0.4rem;
+  border-radius: 0.3rem;
   border: none;
 
   display: flex;
@@ -16,13 +16,14 @@
   &--blue {
     background-color: $SoftBlue;
     color: white;
-    box-shadow: 0 10px 10px -5px $GrayshBlue;
+    // box-shadow: 0 10px 10px -5px $GrayshBlue;
   }
 
   &--gray {
-    background-color: $GrayshBlue;
+    // background-color: $GrayshBlue;
+    background-color: white;
 
     color: black;
-    box-shadow: 0 10px 10px -5px $GrayshBlue;
+    // box-shadow: 0 10px 10px -5px $GrayshBlue;
   }
 }

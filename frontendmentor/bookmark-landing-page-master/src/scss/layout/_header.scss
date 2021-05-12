@@ -56,13 +56,15 @@
   }
 
   &__content {
-    margin-top: 4.72rem;
+    margin-top: 2.6rem;
     display: grid;
     gap: 1rem;
     &--title {
       display: block;
       text-align: center;
       color: $VeryDarkBlue;
+      font-weight: 500;
+      line-height: 1.4;
     }
 
     &--text {
@@ -70,16 +72,20 @@
       color: $GrayshBlue;
       line-height: 1.4;
       padding: 0 20px;
+      font-size: 0.7rem;
+      text-align: center;
     }
 
     // &__button{}
     // &__button{}
 
     &--buttons {
-      display: grid;
+      display: flex;
       justify-content: center;
-      flex-direction: row;
-      flex-wrap: nowrap;
+    }
+    &--button {
+      margin: 0.3rem;
+      box-shadow: 0 5px 5px 0px $GrayshBlue;
     }
   }
 }
