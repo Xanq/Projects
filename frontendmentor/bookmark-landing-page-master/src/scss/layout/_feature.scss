@@ -1,1 +1,105 @@
 @use "../utilities" as *;
+
+.feature {
+  margin-top: 6.05rem;
+  &__title {
+    text-align: center;
+    color: $VeryDarkBlue;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__text {
+    text-align: center;
+    color: $GrayshBlue;
+    line-height: 1.4;
+    padding: 2rem 20px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: $VeryDarkBlue;
+    font-size: 0.7rem;
+    font-weight: 500;
+    // margin: 0.4rem 0rem;
+    padding: 1rem 0;
+    // height: 3rem;
+
+    // & span {
+    // }
+
+    // &:hover span {
+    //   border-bottom: 3px solid orange;
+    // }
+
+    & span::after {
+      content: "";
+      border-bottom: 3px solid red;
+      display: block;
+      width: 50%;
+      height: 100%;
+      display: none;
+    }
+    //najpierw musze zrobic after apotem hover:after?
+
+    & span:hover:after {
+      //relative nie potrzebny?
+      position: absolute;
+      top: 0;
+      z-index: 9999;
+      display: block;
+      transform: translateX(50%);
+    }
+
+    .borderTop {
+      position: absolute;
+      width: 85%;
+      left: 7.5%;
+      top: -2.5px;
+      border-top: 1px solid gray;
+    }
+
+    .borderBottom {
+      position: absolute;
+      width: 85%;
+      left: 7.5%;
+      border-bottom: 1px solid gray;
+      bottom: 0.5px;
+    }
+    // &:nth-of-type(1) {
+    //   border-top: 1px solid gray;
+    //   border-bottom: 1px solid gray;
+    // }
+    // // &:nth-of-type(2) {
+    // //   color: blue;
+    // // }
+    // &:nth-of-type(3) {
+    //   border-top: 1px solid gray;
+    //   border-bottom: 1px solid gray;
+    // }
+  }
+
+  &__picture {
+    &--logo {
+      display: block;
+      margin: 0 auto;
+      margin-top: 58px;
+      width: 253px;
+      height: 164px;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20rem;
+      height: 20rem;
+
+      background-color: green;
+    }
+  }
+}
