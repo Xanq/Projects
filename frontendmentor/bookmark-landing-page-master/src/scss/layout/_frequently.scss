@@ -15,7 +15,7 @@
 
   &__article {
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1.9fr 0.1fr;
     grid-template-rows: 0.1fr 1fr;
     // gap: 0.5rem;
 
@@ -23,7 +23,7 @@
       grid-row: 1/2;
       grid-column: 1/2;
 
-      font-size: 80%;
+      font-size: 66.5%;
     }
 
     &--arrow {
@@ -52,5 +52,13 @@
       grid-column: 1/-1;
       margin-bottom: 0.5rem;
     }
+  }
+
+  &__button {
+    width: 94px;
+    height: 40px;
+    // background-color: $SoftBlue;
+    background-color: $VeryDarkBlue;
+    color: white;
   }
 }

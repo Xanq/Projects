@@ -1,0 +1,39 @@
+@use "../utilities/" as *;
+
+.contact {
+  margin-top: 5.5rem;
+  padding: 3.33rem 1.38rem 0 1.38rem;
+  background-color: $SoftBlue;
+
+  &__header {
+    color: white;
+    text-align: center;
+
+    &::before {
+      content: "35.000+ ALREADY JOINED";
+      display: block;
+      font-size: 75%;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__input {
+    margin: 1.72rem 0 0.72rem 0;
+    background-color: white;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    background-color: $SoftRed;
+    height: 40px;
+    color: white;
+
+    margin-bottom: 2.83rem;
+  }
+}
