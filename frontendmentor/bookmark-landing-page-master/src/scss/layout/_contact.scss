@@ -2,38 +2,56 @@
 
 .contact {
   margin-top: 5.5rem;
-  padding: 3.33rem 1.38rem 0 1.38rem;
+  padding: 3.33rem 1.3rem 0 1.3rem;
   background-color: $SoftBlue;
 
   &__header {
     color: white;
     text-align: center;
+    font-weight: 500;
 
     &::before {
       content: "35.000+ ALREADY JOINED";
       display: block;
-      font-size: 75%;
-      font-weight: 200;
-      letter-spacing: 2px;
+      font-size: 55%;
+      font-weight: 400;
+      letter-spacing: 3px;
       margin-bottom: 15px;
     }
   }
 
   &__input {
     margin: 1.72rem 0 0.72rem 0;
+    height: 2.27rem;
+    width: 14.22rem;
     background-color: white;
+    border-radius: 0.5rem;
+    font-size: 65%;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
   }
+
+  // Anywhere you have float:left; in your CSS, add width: 100%; after it. Floating will kill your desired center alignment.
+
+  // Also, add text-align: center; to #login
+
+  // As you guessed, you are right, text-align: center; is used to align the text/element horizontally only and not vertically... so if you are talking about aligning the single line text vertically than you need to use line-height, which will be equal to the container height
 
   &__button {
     display: flex;
     justify-content: center;
-    align-content: center;
-    text-align: center;
+    align-items: center; //PEPOWTFLOLOMG
 
     background-color: $SoftRed;
-    height: 40px;
+    height: 2.27rem;
+    width: 14.22rem;
     color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 51px;
+    font-size: 75%;
 
-    margin-bottom: 2.83rem;
+    // margin-bottom: 2.83rem;
   }
 }

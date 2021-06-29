@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   //mobile first
 
   //   height: 100vh;
@@ -18,7 +18,7 @@
 }
 
 .nav {
-  grid-area: nav;
+  grid-area: navbar;
 }
 .header {
   grid-area: header;

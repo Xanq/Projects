@@ -8,6 +8,7 @@
     color: $VeryDarkBlue;
     font-weight: 500;
     line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
   &__text {
@@ -17,6 +18,7 @@
     padding: 0 20px;
     font-size: 0.7rem;
     text-align: center;
+    margin-bottom: 2.05rem;
   }
 
   &__button {
@@ -60,16 +62,16 @@
       position: absolute;
       width: 85%;
       left: 7.5%;
-      top: -2.5px;
-      border-top: 1px solid gray;
+      top: 0;
+      border-top: 1px solid $GrayshBlue;
     }
 
     .borderBottom {
       position: absolute;
       width: 85%;
       left: 7.5%;
-      border-bottom: 1px solid gray;
-      bottom: 0.5px;
+      border-bottom: 1px solid $GrayshBlue;
+      bottom: -1px;
     }
     // &:nth-of-type(1) {
     //   border-top: 1px solid gray;

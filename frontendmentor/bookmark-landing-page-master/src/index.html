@@ -27,13 +27,40 @@
   </head>
 
   <body>
-    <div class="container">
-      <div id="nav">
+    <!-- nav -->
+    <nav>
+    <div class="nav">
+      <nav class="nav__cta">
+      <div class="container flex">
+        
         <img class="nav__logo" src="../images/logo-bookmark.svg" />
-        <img class="nav__menu" src="../images/icon-hamburger.svg" />
+        <img id="nav__menu--first" class="nav__menu nav__toggle" src="../images/icon-hamburger.svg" />
+       
       </div>
+    </nav>
+    
+      <ul class="nav__list nav--visible  ">
+        
+        <img class="nav__logo" src="../images/logo-bookmark.svg" />
+        <img id="nav__menu--second" class="nav__menu nav__toggle" src="../images/icon-close--white.svg" />
 
-      <div class="header">
+        <li class="nav__list--element">Features</li>
+        <li class="nav__list--element">Pricing</li>
+        <li class="nav__list--element">Contanct</li>
+        <li class="nav__list--element">Login</li>
+      </ul>
+
+
+      </div>
+    </nav>
+
+
+      <!--  -->
+
+
+
+      <section class="header">
+        <div class="container">
         <!-- header__img mowi ze pracujemy na pliku img -->
         <div class="header__pictures">
           <img
@@ -61,6 +88,7 @@
           </div>
         </div>
       </div>
+      </section>
 
       <div class="feature">
         <h2 class="feature__title">Features</h2>
@@ -122,14 +150,14 @@
         </div>
         <div class="card">
           <img src="../images/logo-firefox.svg" alt="" class="card__logo" />
-          <h5 class="card__title">Add to firefox</h5>
+          <h5 class="card__title">Add to Firefox</h5>
           <div class="card__version">Minimum version 55</div>
           <img src="../images/bg-dots.svg" alt="" />
           <div class="card__button">Add & Install Extension</div>
         </div>
         <div class="card">
           <img src="../images/logo-opera.svg" alt="" class="card__logo" />
-          <h5 class="card__title">Add to chrome</h5>
+          <h5 class="card__title">Add to Opera</h5>
           <div class="card__version">Minimum version 46</div>
           <img src="../images/bg-dots.svg" alt="" />
           <div class="card__button">Add & Install Extension</div>
@@ -140,7 +168,7 @@
         <h2 class="frequently__header">Frequently Asked Questions</h2>
 
         <div class="frequently__text">
-          Frequently Asked Questions Here are some of our FAQs. If you have any
+          Here are some of our FAQs. If you have any
           other questions you’d like answered please feel free to email us.
         </div>
 
@@ -223,6 +251,32 @@
         <div class="contact__button">Contact Us</div>
       </div>
     </div>
+
+    <div class="footer">
+      <div class="footer__header">
+        <img
+          src="../images/logo-bookmark--white.svg"
+          alt="bookmark__logo"
+          class="footer__logo"
+        />
+       
+        </div>
+        
+        <li class="footer__menu">
+          <ul class="footer__menu--element">
+            FEATURES
+          </ul>
+          <ul class="footer__menu--element">
+            PRICING
+          </ul>
+          <ul class="footer__menu--element">
+            CONTACT
+          </ul>
+          <img src="../images/icon-facebook.svg" alt="img facebook" class="footer__menu--img" />
+          <img src="../images/icon-twitter.svg" alt="img twitter" class="footer__menu--img" />
+        </li>
+      </div>
+    </div>
     <!-- container -->
 
     <!-- </div>
@@ -238,23 +292,5 @@
       </p>
     </footer>
   </body>
+  <script src="../js/myJS.js"></script>
 </html>
-
-<!-- Features Pricing Contact Login -->
-
-<!-- More
-Info Download the extension  -->
-
-<!-- Answer 1 -->
-
-<!-- Question 2 -->
-
-<!-- Answer 2 -->
-
-<!-- Question 3 -->
-
-<!-- Answer 3 -->
-
-<!-- Question 4 -->
-
-<!-- Answer 4 -->

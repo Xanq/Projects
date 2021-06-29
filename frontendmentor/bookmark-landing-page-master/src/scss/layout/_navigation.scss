@@ -1,23 +1,84 @@
-@use '../utilities';
+@use '../utilities'as *;
 
-#nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.nav {
+  position: relative;
   padding: 0 1.44rem;
   margin-top: 1.7rem;
 
-  .nav__logo {
-    //img + title together
-    width: 6.72rem;
-    height: 1.16rem;
+  & .flex {
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .nav__menu {
-    width: 0.9375rem;
-    height: 0.8125rem;
+  &__list {
+
+    
+    color: rgb(255, 254, 254);
+    background-color: $navBackground;
+
+ 
+
+
+
+
+
+    list-style-type: none;
+
+    &--element {
+      text-align: center;
+      border-bottom: 1px solid white;
+    
+        margin: 1rem;
+      padding: 0.6rem;
+
+      &:nth-of-type(1){
+          border-top: 1px solid white;
+      }
+
+    }
+    
+
+    &--element:hover{
+      outline: 2px  solid white;
+    }
   }
+
+
+
+
 }
+
+
+.nav--visible {
+  display: none;
+  // transform: all ;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .nav__logo {
+//   //img + title together
+//   width: 6.72rem;
+//   height: 1.16rem;
+// }
+
+// .nav__menu {
+//   width: 0.9375rem;
+//   height: 0.8125rem;
+// }
+
 
 // bigger than 325 pix
 
