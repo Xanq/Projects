@@ -3,8 +3,9 @@
 //305px
 .header {
   margin-top: 3.61rem;
-  position: relative;
+
   &__pictures {
+    position: relative;
     &--logo {
       //img it's inlince elem.
       display: block;
@@ -18,8 +19,7 @@
       // max-height: 100%;
       //jak ustalam width w rem to zabiera mi po 35 px z height i width;
       //% bardziej pasuja
-      width: 95%;
-      height: 95%;
+      width: 83.5%;
       //95% pasuje idealnie do rozmiarow z figmy JAK TO TAK jest?
       object-fit: cover;
     }
@@ -28,15 +28,18 @@
       content: "";
       display: block;
       //235
-      width: 13.05rem;
-      //165
-      height: 9.16rem;
+      // width: 13.05rem;
+      // //165
+      // height: 9.16rem;
+      width: 77.8%;
+      min-height: 75%;
       background-color: blue;
       position: absolute;
       opacity: 0.5;
       z-index: -199;
-      top: 2.6rem;
+      bottom: 0;
       right: 0rem;
+   
       border-radius: 200px 0 0 200px;
     }
   }
@@ -44,8 +47,8 @@
   &__shape {
     position: absolute;
     // to chyyba musza byc %
-    width: 15.625rem;
-    height: 11.0625rem;
+    width: 77.8%;
+    height: 35%;
     background-color: blue;
 
     border-radius: 200px 0 0 200px;

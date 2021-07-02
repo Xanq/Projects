@@ -15,7 +15,7 @@
     text-align: center;
     color: $GrayshBlue;
     line-height: 1.7;
-    padding: 0 20px;
+
     font-size: 0.7rem;
     text-align: center;
     margin-bottom: 2.05rem;
@@ -92,20 +92,21 @@
       display: block;
       margin: 0 auto;
       margin-top: 58px;
-      width: 253px;
-      height: 164px;
+      width: 83.5%;
+     
       object-fit: cover;
     }
     &::after {
       content: "";
       display: block;
       position: absolute;
-      width: 232px;
-      height: 164px;
-      top: 1rem;
+      width: 77.8%;
+      min-height: 100%;
       border-radius: 0 0 2rem 0;
       opacity: 50%;
       z-index: -9999999999;
+
+      bottom: -1.2rem;
 
       background-color: blue;
     }

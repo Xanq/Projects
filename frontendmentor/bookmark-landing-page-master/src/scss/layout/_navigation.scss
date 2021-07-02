@@ -1,64 +1,159 @@
 @use '../utilities'as *;
 
 
-.nav {
-  position: relative;
-  padding: 0 1.44rem;
-  margin-top: 1.7rem;
 
+.nav--visible {
+  
+
+   display: none;
+  //visibility: hidden;
+
+}
+
+.navbar {
+
+  padding: 1rem 0;
+
+  
+  
   & .flex {
     align-items: center;
     justify-content: space-between;
   }
 
-  &__list {
 
-    
-    color: rgb(255, 254, 254);
-    background-color: $navBackground;
+
+}
+
+
+
+
+.nav__logo{
+  height: auto;
+  width: 49%;
+}
+
+#navbar__button{
+
+  width: 6.5%;
+}
+
+#nav__menu--button{
+
+  width: 5%;
+}
+
+.nav__menu {
+
+  animation-name: showyourself;
+  animation-duration: 0.5s;
+
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+
+  
+  padding: 1rem 1.6875rem;
+    //to bardziej jak static dziala
+  // width: 100vh;
+  // height: 100vh;
+  opacity :0.9;
+
+
+  //to juz sie skaluje
+  width: 100%;
+  // height: 100%;
+    min-height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $navBackground;
+  
+
+
+ 
+
+}
+
+.nav__list {
+
+ 
+
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+
+
+  
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+
+  &--element {
+    text-align: center;
+
+   
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+    padding: 0.5rem 0;
 
  
 
 
-
-
-
-    list-style-type: none;
-
-    &--element {
-      text-align: center;
-      border-bottom: 1px solid white;
-    
-        margin: 1rem;
-      padding: 0.6rem;
-
-      &:nth-of-type(1){
-          border-top: 1px solid white;
-      }
+    &:nth-of-type(1) {
+      border-top: 1px solid rgb(255, 255, 255, 0.2);
 
     }
-    
 
-    &--element:hover{
-      outline: 2px  solid white;
-    }
+    &:hover {
+            outline: 3px solid rgb(255,255,255);
+            border-radius: 5px;
+         
+          }
+
+         
   }
 
 
+  &--item{
+
+    
+    color: white;
+    text-decoration: none;
+    font-size: 70%;
+    font-weight: 400;
+    
+
+    
+    
+  }
+
+
+  &--footer{    
+display: flex;
+height: 45vh;
+min-height: 100%;
+justify-content: center;
+align-items: flex-end;
+ 
+
+
+
+& > *  {
+  width: 10%;
+    margin: 0 1rem;
+ 
 
 
 }
 
 
-.nav--visible {
-  display: none;
-  // transform: all ;
-
+  }
 
 }
-
-
-
 
 
 
