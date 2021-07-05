@@ -7,6 +7,7 @@
   // align-content: center;
   text-align: center;
 
+
   &__header {
     color: white;
     // display: grid;
@@ -16,7 +17,9 @@
   //img just-self end nie dziala - to ma jakis zwiazek z width i height
   // 2. Your images need to be display:inline-block; else they will not interact as "text" (in justify text last line is not affected you need to add one to make it works.)
   &__logo {
-    margin: 2.11rem 0;
+    margin: 1.5rem 0;
+    width: 90%;
+
     // width: 100%;
     // height: 100%;
     // background-color: red;
@@ -41,6 +44,7 @@
     }
     &--img {
       padding: 0 0.91rem;
+      width: 35%;
       margin-bottom: 2rem;
     }
   }
